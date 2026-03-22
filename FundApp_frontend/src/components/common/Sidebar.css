@@ -1,0 +1,197 @@
+.sidebar {
+  position: relative;
+  z-index: 10;
+  flex-shrink: 0;
+  transition: width 0.3s ease-in-out;
+  height: 100vh;
+}
+
+.sidebar-container {
+  height: 100%;
+  background-color: var(--color-background);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--color-border);
+  gap: 2rem;
+}
+
+.sidebar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-right: 1rem;
+  gap: 0.5rem;
+}
+
+.menu-button {
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background-color: var(--color-indigo-400);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.menu-button:hover {
+  background-color: var(--color-indigo-300);
+}
+
+.theme-toggle, .language-toggle {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle:hover, .language-toggle:hover {
+  background-color: var(--color-hover);
+  color: var(--color-text-primary);
+}
+
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 6px;
+  width: auto;
+}
+
+.language-indicator {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  margin-bottom: 0.25rem;
+  text-decoration: none;
+  color: var(--color-text-secondary);
+}
+
+.nav-item:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-hover);
+}
+
+.nav-item svg {
+  min-width: 20px;
+}
+
+.nav-item-text {
+  margin-left: 0.75rem;
+  white-space: nowrap;
+  opacity: 1;
+  width: auto;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.nav-item-text.hidden {
+  opacity: 0;
+  width: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Settings Menu Styles */
+.settings-menu-item {
+  cursor: pointer;
+  position: relative;
+  justify-content: space-between;
+}
+
+.nav-item-content {
+  display: flex;
+  align-items: center;
+}
+
+.settings-chevron {
+  color: var(--color-text-secondary);
+  transition: transform 0.2s ease;
+}
+
+.settings-submenu-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+  margin-top: -0.5rem;
+  padding-left: 1.5rem;
+  border-left: 1px dashed var(--color-border);
+  overflow: hidden;
+}
+
+.submenu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  transition: all 0.2s ease;
+}
+
+.submenu-button {
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.submenu-button:hover {
+  color: var(--color-text-primary);
+}
+
+.submenu-item:hover {
+  background-color: var(--color-hover);
+}
+
+/* Dark mode transitions */
+:root {
+  --transition-duration: 0.2s;
+}
+
+* {
+  transition: background-color var(--transition-duration) ease,
+              border-color var(--transition-duration) ease,
+              color var(--transition-duration) ease;
+} 

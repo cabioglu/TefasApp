@@ -1,0 +1,71 @@
+.funds-table-container {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    padding: 1px;
+    border-radius: 1px;
+  }
+  .ant-table table { font-size: 12px; }
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .filter-select {
+    min-width: 200px;
+  }
+  
+  /* These styles are now handled by the global theme.css */
+  /*
+  .custom-table .ant-table-thead > tr > th {
+    background-color: #1a202c;
+    color: #e2e8f0;
+  }
+
+  .custom-table .ant-table-thead > tr:hover > th {
+    background-color: #1a202c;
+    color:#f0e2e4;
+  }
+  
+  .custom-table .ant-table-tbody > tr > td {
+    background-color: #2d3748;
+    color: #e2e8f0;
+  }
+  
+  .custom-table .ant-table-tbody > tr:hover > td {
+    background-color: #3b4a5b;
+    color:#2d3748;
+  }
+
+  
+  .custom-table .ant-table-pagination .ant-pagination-item-active {
+    background-color: #34424f;
+    border-color: #2a74b8;
+  }
+  */
+
+  /* Filter styling using theme variables */
+  .ant-table-wrapper .ant-table-filter-trigger{
+    color: var(--color-text-secondary) !important;
+  }
+  .ant-table-wrapper .ant-table-filter-trigger:hover{
+    color: var(--color-indigo-400) !important;
+  }
+
+  .ant-table-wrapper .ant-table-filter-trigger.active{
+    color: var(--color-indigo-400) !important;
+  } 
+  
+  

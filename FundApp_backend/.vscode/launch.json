@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TefasApplication<tefas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cabioglu.tefas.TefasApplication",
+            "projectName": "tefas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

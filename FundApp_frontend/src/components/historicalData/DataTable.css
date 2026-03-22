@@ -1,0 +1,126 @@
+.data-table-container {
+  background-color: rgba(31, 41, 55, 0.5);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  border: 1px solid var(--color-gray-700);
+  margin: 0.5rem;
+}
+
+.data-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.data-table-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-gray-100);
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  background-color: var(--color-gray-700);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2.5rem;
+  font-size: 0.875rem;
+  border: none;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: var(--color-gray-400);
+}
+
+.search-input:focus {
+  outline: 2px solid var(--color-blue-500);
+  outline-offset: -2px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.625rem;
+  color: var(--color-gray-400);
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table th {
+  padding: 0.75rem 1.5rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-gray-400);
+  border-bottom: 1px solid var(--color-gray-700);
+}
+
+.table td {
+  padding: 1rem 1.5rem;
+  white-space: nowrap;
+  color: var(--color-gray-300);
+  border-bottom: 1px solid var(--color-gray-700);
+}
+
+.fund-code-container {
+  display: flex;
+  align-items: center;
+}
+
+.fund-code-avatar {
+  flex-shrink: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right, var(--color-purple-400), var(--color-blue-500));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+}
+
+.fund-name {
+  margin-left: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-gray-100);
+}
+
+.action-button {
+  background: none;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.edit-button {
+  color: var(--color-indigo-400);
+}
+
+.edit-button:hover {
+  color: var(--color-indigo-300);
+}
+
+.delete-button {
+  color: var(--color-red-400);
+}
+
+.delete-button:hover {
+  color: var(--color-red-300);
+} 
